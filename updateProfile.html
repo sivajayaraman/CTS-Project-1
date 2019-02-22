@@ -8,23 +8,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#0d0d0d" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    </head>
-    <body style="background-image: url(background.jpeg)">
-<style>
-    .font{
+    <style>
+    pre{
         text-decoration-color: chocolate;
         
     }
-</style>  
+        .font
+        {
+            align-content: center;
+            text-decoration-color: blueviolet;
+        }
+</style> 
+    <link rel="stylesheet" href="updateProfile.css">
+    </head>
+    <body style="background-image: url(background.jpeg);align-content: ">
+         <br>
+            <br>
+            <br>
+ <div class="font">
     <div class="row h-100 justify-content-center align-items-center">     
+        <div class="card">
+  <div class="container">
+    
+             <br>
         <form action="/action_page.php" method="get">
-            <div class="font" style="align-items: center ;text-decoration-color: burlywood">
-            <pre> FIRST NAME      <input type="text" name="fname"><br></pre>
-            <pre> LAST  NAME      <input type="text" name="lname"><br></pre>
-            <pre> REGISTER NO     <input type="digit" name="reg"><br></pre>
-            <pre> ROLL NO         <input type="digit" name="roll"><br></pre>
-            <pre> DATE OF BIRTH   <input type="date" name="dob"><br></pre>
-            <pre> DEPT            <select name="dept">
+            <pre><label style="color: white"> FIRST NAME    </label>  <input type="text" name="fname"><br></pre>
+            <pre><label style="color: white"> LAST  NAME    </label>  <input type="text" name="lname"><br></pre>
+            <pre><label style="color: white"> REGISTER NO   </label>  <input type="digit" name="reg"><br></pre>
+            <pre><label style="color: white"> ROLL NO       </label>  <input type="digit" name="roll"><br></pre>
+            <pre><label style="color: white"> DATE OF BIRTH </label>  <input type="date" name="dob"><br></pre>
+            <pre><label style="color: white"> DEPT          </label>  <select name="dept">
   <option value="cse">CSE</option>
   <option value="ece">ECE</option>
   <option value="eee">EEE</option>
@@ -35,11 +48,15 @@
   <option value="mech">MECH</option>
   <option value="eie">EIE</option>
 </select></pre>
-          <pre> DATE OF BIRTH   <input type="date" name="dob"><br></pre>   
-          <pre> BATCH           <input type="text" name="fname"><br></pre>
-            </div>    
+            <pre><label style="color:white"> GENDER          </label><input type="radio" name="gender" value="male" checked><label style="color:white">MALE </label><input type="radio" name="gender" value="female"><label style="color:white">FEMALE </label></pre>   
+          <pre><label style="color:white"> BATCH          </label> <input type="text" name="batch"><br></pre>
+            <pre><label style="color:white"> E-MAIL         </label> <input type="email" name="batch"><br></pre>
+            <pre><label style="color:white"> PHONE NO       </label> <input type="tel" name="batch"><br></pre><br>
+            <pre>  <button type="submit" form="profile" value="Submit">Update</button>       <button type="submit" form="profile" value="Submit">Submit</button>       <button type="submit" form="profile" value="Submit">Clear</button> </pre>
 </form>
-            
+      </div>
+</div>
+                       </div>     
         </div>
             </body>
 </html>

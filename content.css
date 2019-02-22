@@ -3,7 +3,8 @@ body{
 }
 
 .flip-card {
-    box-shadow: 0 4px 8px 0 rgba(46, 49, 49, 1);
+  box-shadow: 0 4px 8px 0 rgba(46, 49, 49, 1);
+  border-radius: 73px;    
   background-color: transparent;
   width: 150px;
   height: 150px;
@@ -31,6 +32,7 @@ body{
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
+  border-radius: 25px;    
 }
 
 /* Style the front side (fallback if image is missing) */

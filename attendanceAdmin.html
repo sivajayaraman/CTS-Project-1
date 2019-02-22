@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>ATTENDANCE</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#0d0d0d" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GETTING STARTED WITH BRACKETS</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link rel="stylesheet" href="main.css">
     </head>
-    <body>
-    <p>
-        ATTENDANCE ENTRY FOR STUDENTS
-        </p></body>
+    <body style="background-image: url(background.jpeg)">
+        <div align="center">
+       <form action="/action_page.php" method="get" id="form1"><br><br>
+           <img src="img_avatar3.jpg"><br><br><br>
+           <label style="color: azure">    REGISTER NO:<br></label><br><br>
+            <input type="text" name="REGISTER NO:"><br><br>
+           <select>
+            <option value="LEAVE">LEAVE</option>
+            <option value="ABSENT">ABSENT</option>
+            <option value="OD">OD</option>
+            <option value="ML">ML</option>
+        </select>
+            <button type="submit" form="form1" value="Submit">Submit</button>
+        </form>
+        </div>
+    </body>
 </html>
