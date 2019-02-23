@@ -25,7 +25,7 @@
         }
     </script>
 </head>
-<body onload="openChoice(event, 'Student')">
+<body onload="openChoice(event, '0')">
     <section id="login-form">
         <div class="container">
             <div class="row">
@@ -40,17 +40,12 @@
                 <div class="col-12 col-md-5 mx-auto">
                     <div class="row">
                         <div class="col-md-12">
-                        <hr />
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
                             <div class="tab">
-                                <button class="tablinks" onclick="openChoice(event, 'Student')" style="background-color: #ddd">Student</button>
-                                <button class="tablinks" onclick="openChoice(event, 'Admin')">Admin</button>
+                                <button class="tablinks" onclick="openChoice(event, '0')" style="background-color: #ddd">Student</button>
+                                <button class="tablinks" onclick="openChoice(event, '1')">Admin</button>
                             </div>
                             <form name="loginform" action="dashboard.html" method="post" role="form">
-                                <div class="tabcontent"  id="Student">
+                                <div class="tabcontent"  id="0">
                                 <div class="form-group">
                                     <div class="col-auto formInput">
                                         <label class="sr-only" for="login-username">Username</label>
@@ -72,12 +67,14 @@
                                             <input id="login-password" name="password" type="password" class="form-control" placeholder="Student Password" autocomplete="off">
                                         </div>
                                         <div class="input-holder">
-                                            <input type="submit" id="btn-login" href="#" class="btn btn-primary" value="Login" onclick="this.style.display='none'"/>
+                                            <input type="submit" id="btn-login" class="btn btn-primary" value="Login" name="Submit"/>
                                     </div>
                                     </div>
                                 </div>
                                 </div>
-                                <div class="tabcontent"  id="Admin">
+                            </form>
+                            <form name="loginform" action="dashboard.html" method="post" role="form">
+                                <div class="tabcontent"  id="1">
                                 <div class="form-group">
                                     <div class="col-auto formInput">
                                         <label class="sr-only" for="login-username">Username</label>
@@ -99,7 +96,7 @@
                                             <input id="login-password" name="password" type="password" class="form-control" placeholder="Admin Password" autocomplete="off">
                                         </div>
                                         <div class="input-holder">
-                                            <input type="submit" id="btn-login" href="#" class="btn btn-primary" value="Login" onclick="this.style.display='none'"/>
+                                            <input type="submit" id="btn-login" class="btn btn-primary" value="Login" name="Submit"/>
                                     </div>
                                     </div>
                                 </div>
